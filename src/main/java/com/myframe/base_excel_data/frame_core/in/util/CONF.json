@@ -1,0 +1,174 @@
+{
+  "grobal" : {
+    "autoCreateTable" : true
+  },
+  "sheets" : [
+    {
+      "sheetName" : "model",
+      "readOrientation" : "horizontal",
+      "startRows" : 1,
+      "colums" : [
+        {
+          "colIndex" : 0,
+          "colName" : "id",
+          "dataType" : "string",
+          "acceptNulled" : true
+        },
+        {
+          "colIndex" : 1,
+          "colName" : "码头名称",
+          "dataType" : "string",
+          "acceptNulled" : false
+        },
+        {
+          "colIndex" : 2,
+          "colName" : "船舶编号",
+          "dataType" : "string",
+          "acceptNulled" : false
+        },
+        {
+          "colIndex" : 3,
+          "colName" : "船舶名称",
+          "dataType" : "string",
+          "acceptNulled" : false
+        },
+        {
+          "colIndex" : 4,
+          "colName" : "进/出港",
+          "dataType" : "string",
+          "acceptNulled" : false,
+          "valsScope" : ["进港","出港"]
+        },
+        {
+          "colIndex" : 5,
+          "colName" : "进港时间",
+          "dataType" : "date",
+          "acceptNulled" : false,
+          "dataFormat" : "yyyy-MM-dd HH:mm"
+        },
+        {
+          "colIndex" : 6,
+          "colName" : "出港时间",
+          "dataType" : "date",
+          "acceptNulled" : false,
+          "dataFormat" : "yyyy-MM-dd HH:mm"
+        },
+        {
+          "colIndex" : 7,
+          "colName" : "来源港口",
+          "dataType" : "string",
+          "acceptNulled" : false
+        },
+        {
+          "colIndex" : 8,
+          "colName" : "目的港口",
+          "dataType" : "string",
+          "acceptNulled" : false
+        },
+        {
+          "colIndex" : 9,
+          "colName" : "货物大类",
+          "dataType" : "string",
+          "acceptNulled" : false
+        },
+        {
+          "colIndex" : 10,
+          "colName" : "货物小类",
+          "dataType" : "string",
+          "acceptNulled" : false
+        },
+        {
+          "colIndex" : 11,
+          "colName" : "货物对应数量",
+          "dataType" : "double",
+          "acceptNulled" : false,
+          "dataFormat" : "#.##"
+        }
+      ]
+    }
+  ],
+  "tables" : [
+    {
+      "tableName" : "excelTest2",
+      "dbUrl" : "jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC",
+      "dbDriver" : "com.mysql.cj.jdbc.Driver",
+      "dbUser" : "root",
+      "dbPassword" : "qida1403",
+      "maps" : [
+        {
+          "sheet" : "model",
+          "fromCols" : 0,
+          "toCols" : "id",
+          "autoValueModel" : "AUTO",
+          "isParmaryKey" : true
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 1,
+          "toCols" : "mt_name",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 2,
+          "toCols" : "ship_code",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 3,
+          "toCols" : "ship_name",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 4,
+          "toCols" : "in_out",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 5,
+          "toCols" : "in_time",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 6,
+          "toCols" : "out_time",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 7,
+          "toCols" : "from_gk",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 8,
+          "toCols" : "to_gk",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 9,
+          "toCols" : "good_big_type",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 10,
+          "toCols" : "good_second_type",
+          "isParmaryKey" : false
+        },
+        {
+          "sheet" : "model",
+          "fromCols" : 11,
+          "toCols" : "good_num",
+          "isParmaryKey" : false
+        }
+      ]
+    }
+  ]
+}

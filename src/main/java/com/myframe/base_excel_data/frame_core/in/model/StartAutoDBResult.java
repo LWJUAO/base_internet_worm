@@ -1,4 +1,4 @@
-package com.myframe.base_internet_worm.frame_core.model;
+package com.myframe.base_excel_data.frame_core.in.model;
 
 /**
  * 运行读取验证数据并更新数据库方法结果对象

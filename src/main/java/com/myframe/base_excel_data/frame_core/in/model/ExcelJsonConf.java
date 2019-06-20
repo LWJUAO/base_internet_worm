@@ -1,13 +1,13 @@
-package com.myframe.base_internet_worm.frame_core.model;
+package com.myframe.base_excel_data.frame_core.in.model;
 
 import java.util.List;
 
 /**
- * 配置
+ * Excel配置
  */
-public class InternetWormConf {
+public class ExcelJsonConf {
     public GrobalConf grobal;//全局配置
-    public List<LinkConf> links;//访问链接配置
+    public List<SheetsConf> sheets;//sheet配置
     public List<TablesConf> tables;//table配置
 
     public GrobalConf getGrobal() {
@@ -18,12 +18,12 @@ public class InternetWormConf {
         this.grobal = grobal;
     }
 
-    public List<LinkConf> getLinks() {
-        return links;
+    public List<SheetsConf> getSheets() {
+        return sheets;
     }
 
-    public void setLinks(List<LinkConf> links) {
-        this.links = links;
+    public void setSheets(List<SheetsConf> sheets) {
+        this.sheets = sheets;
     }
 
     public List<TablesConf> getTables() {

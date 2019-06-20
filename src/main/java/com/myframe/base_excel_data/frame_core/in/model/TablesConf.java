@@ -1,4 +1,4 @@
-package com.myframe.base_internet_worm.frame_core.model;
+package com.myframe.base_excel_data.frame_core.in.model;
 
 import java.util.List;
 

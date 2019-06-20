@@ -1,30 +1,30 @@
-package com.myframe.base_internet_worm.frame_core.model;
+package com.myframe.base_excel_data.frame_core.in.model;
 
 /**
  * Excel table对应关系Map
  */
 public class TablesMap {
-    public String linkId;//link id工作空间
-    public String fromValKey;//对应的键
+    public String sheet;//excel工作空间
+    public Integer fromCols;//对应的Excel列序号
     public String toCols;//对应的表字段
     public boolean isParmaryKey;//是否为主键，true表示是主键，false表示不是主键
     public String autoValueModel;//自动创建值模式，有UUID、AUTO
     public String defaultVal;//默认值
 
-    public String getLinkId() {
-        return linkId;
+    public String getSheet() {
+        return sheet;
     }
 
-    public void setLinkId(String linkId) {
-        this.linkId = linkId;
+    public void setSheet(String sheet) {
+        this.sheet = sheet;
     }
 
-    public String getFromValKey() {
-        return fromValKey;
+    public Integer getFromCols() {
+        return fromCols;
     }
 
-    public void setFromValKey(String fromValKey) {
-        this.fromValKey = fromValKey;
+    public void setFromCols(Integer fromCols) {
+        this.fromCols = fromCols;
     }
 
     public String getToCols() {

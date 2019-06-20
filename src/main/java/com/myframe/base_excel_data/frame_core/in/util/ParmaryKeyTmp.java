@@ -1,12 +1,12 @@
-package com.myframe.base_internet_worm.frame_core.util;
+package com.myframe.base_excel_data.frame_core.in.util;
 
 /**
  * 主键临时实体
  */
 public class ParmaryKeyTmp {
     public String parmaryKey;
-    public String linkId;
-    public String fromValKey;
+    public String keySheet;
+    public Integer keyFromCols;
     public String defaultVal;//默认值
 
     public String getParmaryKey() {
@@ -17,20 +17,20 @@ public class ParmaryKeyTmp {
         this.parmaryKey = parmaryKey;
     }
 
-    public String getLinkId() {
-        return linkId;
+    public String getKeySheet() {
+        return keySheet;
     }
 
-    public void setLinkId(String linkId) {
-        this.linkId = linkId;
+    public void setKeySheet(String keySheet) {
+        this.keySheet = keySheet;
     }
 
-    public String getFromValKey() {
-        return fromValKey;
+    public Integer getKeyFromCols() {
+        return keyFromCols;
     }
 
-    public void setFromValKey(String fromValKey) {
-        this.fromValKey = fromValKey;
+    public void setKeyFromCols(Integer keyFromCols) {
+        this.keyFromCols = keyFromCols;
     }
 
     public String getDefaultVal() {
