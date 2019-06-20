@@ -1,0 +1,51 @@
+{
+  "grobal" : {
+    "autoCreateTable" : true,
+    "repetitionType" : "timer",
+    "repetitions" : 0,
+    "timeInterval" : 0,
+    "timerFormula" : "*/5 * * * * ?"
+  },
+  "links" : [
+    {
+      "id" : "link1",
+      "name" : "测试",
+      "type" : "pageJson",
+      "url" : "http://192.168.0.113:16082/esb/EsbServiceInfo/page",
+      "fileSavePath" : "D://IWTest",
+      "dataField" : "rows",
+      "pageNumberField" : "currentPage",
+      "headers" : [],
+      "params" : [
+        {
+          "name" : "_sso_token",
+          "value" : "5a41e4d59e040d541c95febc@31d8dc1d-0662-4443-ab06-358ab0b2d059"
+        }
+      ],
+      "valMaps" : [
+        {
+          "name" : "标题",
+          "key" : "serviceName",
+          "selectorOrField" : "serviceName"
+        }
+      ]
+    }
+  ],
+  "tables" : [
+    {
+      "tableName" : "excelTest2",
+      "dbUrl" : "jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC",
+      "dbDriver" : "com.mysql.cj.jdbc.Driver",
+      "dbUser" : "root",
+      "dbPassword" : "qida1403",
+      "maps" : [
+        {
+          "linkId" : "model",
+          "fromValKey" : "",
+          "toCols" : "mt_name",
+          "isParmaryKey" : false
+        }
+      ]
+    }
+  ]
+}
