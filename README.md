@@ -72,7 +72,8 @@
 }
 ```
 ## 案例：
-```String jsonFile = "F:/test/CONF.json";
+```
+String jsonFile = "F:/test/CONF.json";
 File file = new File(jsonFile);
 InternetWormOption option = new InternetWormOption(file);
 option.startButNoDB(new IWDataCallBackIF() {
@@ -81,4 +82,5 @@ option.startButNoDB(new IWDataCallBackIF() {
         System.out.println(JsonXmlUtil.toJson(data));
         return true;
     }
-});```
+});
+```
