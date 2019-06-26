@@ -72,15 +72,13 @@
 }
 ```
 ## 案例：
-```
-	String jsonFile = "F:/test/CONF.json";
-    File file = new File(jsonFile);
-    InternetWormOption option = new InternetWormOption(file);
-    option.startButNoDB(new IWDataCallBackIF() {
-        @Override
-        public boolean callBack(Object data) {
-            System.out.println(JsonXmlUtil.toJson(data));
-            return true;
-        }
-    });
-```
+```String jsonFile = "F:/test/CONF.json";
+File file = new File(jsonFile);
+InternetWormOption option = new InternetWormOption(file);
+option.startButNoDB(new IWDataCallBackIF() {
+    @Override
+    public boolean callBack(Object data) {
+        System.out.println(JsonXmlUtil.toJson(data));
+        return true;
+    }
+});```
