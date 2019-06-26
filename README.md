@@ -1,17 +1,17 @@
-#base_internet_worm
-#description
-作用说明：
+# base_internet_worm
+
+## 作用说明：
   根据配置的JSON文件从网络上获取数据，其中包括JSON数据，网页数据，分页JSON数据和文件；
   可设置获取完成回调处理
   最后根据配置导入数据库
-#steps
-使用步骤：
+
+## 使用步骤：
   配置JSON文件；
   使用InternetWormOption类解析JSON配置
   执行startAndAutoDB()方法或者startButNoDB(new IWDataCallBackIF(){})方法
   (startAndAutoDB方法是获取数据后直接导入数据库，startButNoDB方法是获取数据后回调执行，当回调方法返回true时导入数据库)
-#configuration
-配置说明：
+
+## 配置说明：
 {
   "grobal" : {  //全局配置
     "autoCreateTable" : true,           //是否创建表
@@ -69,8 +69,8 @@
     }
   ]
 }
-#example
-案例：
+
+## 案例：
 	String jsonFile = "F:/test/CONF.json";
     File file = new File(jsonFile);
     InternetWormOption option = new InternetWormOption(file);
