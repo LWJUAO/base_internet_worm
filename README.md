@@ -12,6 +12,7 @@
   (startAndAutoDB方法是获取数据后直接导入数据库，startButNoDB方法是获取数据后回调执行，当回调方法返回true时导入数据库)
 
 ## 配置说明：
+```
 {
   "grobal" : {  //全局配置
     "autoCreateTable" : true,           //是否创建表
@@ -69,8 +70,9 @@
     }
   ]
 }
-
+```
 ## 案例：
+```
 	String jsonFile = "F:/test/CONF.json";
     File file = new File(jsonFile);
     InternetWormOption option = new InternetWormOption(file);
@@ -81,3 +83,4 @@
             return true;
         }
     });
+```
