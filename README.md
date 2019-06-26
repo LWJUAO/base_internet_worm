@@ -1,0 +1,9 @@
+#base_internet_worm
+作用说明：
+  根据配置的JSON文件从网络上获取数据，其中包括JSON数据，网页数据，分页JSON数据和文件；
+  可设置获取完成回调处理
+  最后根据配置导入数据库
+使用步骤：
+  配置JSON文件；
+  使用InternetWormOption类解析JSON配置
+  执行startAndAutoDB（）方法或者startButNoDB（）方法
